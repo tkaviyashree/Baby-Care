@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <img src="image/uwp4214507 (1).png" alt="">
+  
+    <header class="main-header">
+      <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="flowers.html">Flowers</a></li>
+         <li><a href="Galleries.html">Gallery</a></li>
+        <li><a href="workshop.html">Workshop</a></li>
+        <li><a href="contactus.html">Contact us</a></li>
+        <li><a href="signup.html">Signup</a></li>
+        <li><a href="login.html">Login</a></li>
+        
+    </ul>
+    </nav>
+</header>
+
+<div class="container1">
+    <div class="box">
+        <div class="content">
+            <h1><i>Flowers Make <br>Memories!</i><br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+               Rerum, quasi. Libero suscipit minima numquam eius obcaecati 
+              reprehenderit assumenda! Hic corrupti id totam nobis beatae, deserunt iste officiis obcaecati iusto.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Rerum, quasi. Libero suscipit minima numquam eius obcaecati 
+             reprehenderit assumenda! Hic corrupti id totam nobis beatae, deserunt iste officiis obcaecati iusto</p>
+            
+            <form action="">
+                <div>
+                    <button type="submit" class="button1">Order now</button>
+                </div>
+             </form>
+        </div>
+        <div class="img1">
+          <img id="image1" src="image/premium_photo-1676475964992-6404b8db0b53.avif" alt="product-2" onclick="changeImage()">
+      </div>
+      <script>
+        function changeImage(){
+          let displayImage = document.getElementById('image1');
+          if(displayImage.src.match('image/premium_photo-1676475964992-6404b8db0b53.avif')){
+            displayImage.src = 'image/product-10.jpg'
+
+          }else{
+            displayImage.src ='image/premium_photo-1676475964992-6404b8db0b53.avif'
+          }
+        }
+      </script>
+       
+    </div>
+</div>
+
+<section class="products">
+    <h2>Gallery</h2>
+    <div class="product-grid">
+        <div class="product">
+            <img src="image/gallery-1.jpg" alt="Flower 1">
+         </div>
+        <div class="product">
+            <img src="image/gallery-2.jpg" alt="Flower 2">
+           
+        </div>
+        <div class="product">
+            <img src="image/gallery-3.jpg" alt="Flower 3">
+        </div>
+    </div>
+    <div class="product-grid">
+        <div class="product">
+            <img src="image/gallery-4.jpg" alt="Flower 1">
+        </div>
+        <div class="product">
+            <img src="image/gallery-5.jpg" alt="Flower 2">
+        </div>
+        <div class="product">
+            <img src="image/gallery-9.jpg" alt="Flower 3">
+        </div>
+    </div>
+    <div class="product-grid">
+        <div class="product">
+            <img src="image/gallery-13.jpg" alt="Flower 1">
+        </div>
+        <div class="product">
+            <img src="image/gallery-15.jpg" alt="Flower 2">
+        </div>
+        <div class="product">
+            <img src="image/product-1.jpg" alt="Flower 3">
+        </div>
+    </div>
+</section>
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>About Us</h3>
+      <p>We're a team of passionate florists dedicated to providing beautiful flowers and exceptional customer service.</p>
+      <ul>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Meet Our Team</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Quick Links</h3>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="flowers.html">Flowers</a></li>
+           <li><a href="Galleries.html">Gallery</a></li>
+          <li><a href="workshop.html">Workshop</a></li>
+          <li><a href="contactus.html">Contact as</a></li>
+      
+          <li><a href="signup.html">Signup</a></li>
+          <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Stay Connected</h3>
+      <ul>
+        <li><a href="#" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+        <li><a href="#" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>Email : dhivya.com</p>
+      <p>Mobile : 9345386698</p>Email: [info@flowershop.com](mailto:info@flowershop.com)</p>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <p>&copy; 2024 Flower Shop. All rights reserved.</p>
+  </div>
+</footer>
+       
+</body>
+</html>

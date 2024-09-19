@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="flowers.html">Flowers</a></li>
+           <li><a href="Galleries.html">Gallery</a></li>
+          <li><a href="workshop.html">Workshop</a></li>
+          <li><a href="contactus.html">Contact as</a></li>
+          <li><a href="signup.html">Signup</a></li>
+          
+
+      </ul>
+      </nav>
+    </header>
+    <div class="base"></div>
+    <section>
+        <div class="login">
+        <h1>login</h1><br><br>
+        <div class="login-form">
+         <h4>username</h4>
+         <div class="username-input">
+         <i class="fas fa-user"></i>
+         <input type="email" placeholder="enter your mail" id="username">
+         </div>
+         <h4>password</h4>
+         <div class="password-input">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" placeholder="type your password">
+         </div>
+         <p class="p">forgot password</p><br>  
+        </div>
+        <button class="login-btn" onclick="func()">
+            LOGIN
+        </button>
+        <div class="alternative-signup">
+            <p>not a member? <span>sign-up</span></p>
+        </div>
+    </div>
+    </section>
+    <script>
+        function func(){
+            var email = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+            if(email=='dhivya@gmail.com' &&  pass == '1098'){
+                alert("login successfully")
+            window.location.assign("index.html") 
+            }
+          
+            else if(email ==  "" &&   pass == ""){
+                    alert("please enter email and password")
+                }
+                else if(email == ""){
+                    alert("please enter valid email")
+                }
+                else if(pass == ""){
+                    alert("please enter valid password")
+                }
+
+               else if(email != 'divi@gmail.com' &&  pass != '1098'){
+                alert("please enter correct email or password")
+               }
+               else{
+                alert("ivalid")
+               }
+            
+            }
+          
+    </script>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>We're a team of passionate florists dedicated to providing beautiful flowers and exceptional customer service.</p>
+            <ul>
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Meet Our Team</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="flowers.html">Flowers</a></li>
+                <li><a href="Galleries.html">Gallery</a></li>
+                <li><a href="workshop.html">Workshop</a></li>
+                <li><a href="contactus.html">Contact as</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Stay Connected</h3>
+            <ul>
+              <li><a href="#" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+              <li><a href="#" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+              <li><a href="#" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email : dhivya.com</p>
+           <p>Mobile : 9345386698</p>Email: [info@flowershop.com](mailto:info@flowershop.com)</p>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; 2024 Flower Shop. All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>

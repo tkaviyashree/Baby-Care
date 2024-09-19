@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header>
+    <a href="#"><img src="./images/logo.png" alt="logo" class="logo">
+     <label for="check" class="icons">
+     <i class="uil uil-bars" onclick="myMenu()" id="menu-icons"></i>
+     <i class=" bx bx-x"  id="close-icons"></i>
+  </label>
+
+<nav class="navbar">
+    <a href="index.html" class="nav-item">Home</a>
+    <a href="about.html" class="nav-item">About</a>
+    <a href="contact.html" class="nav-item">Contact Us</a>
+    <a href="product.html" class="nav-item">Products</a>
+    <a href="register.html" class="nav-item">Register</a>
+
+</nav>          
+</header>
+    <div class="base"></div>
+    <section>
+        <div class="login">
+        <h1>LOGIN</h1><br><br>
+        <div class="login-form">
+         <h4>User Name</h4>
+         <div class="username-input">
+         <i class="fas fa-user"></i>
+         <input type="email" placeholder="Enter your Email" id="username">
+         </div>
+         <h4>Password</h4>
+         <div class="password-input">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="password" placeholder="Enter your Password">
+         </div>
+        </div>
+        <button class="login-btn" onclick="func()">
+            LOGIN
+        </button>
+        <div class="alternative-signup">
+            <p>Not a member? <span><a href="register.html">Signup</a></span></p>
+        </div>
+    </div>
+    </section>
+    
+   
+          <footer class="footer-distributed">
+            <div class="footer-left">
+                 <h3>Baby<span>Care</span></h3>
+                    <p class="footer-links">
+              <a href="index.html" class="link-1">Home</a>
+              <a href="about.html">About</a>
+              <a href="contact.html">Contact</a>
+               <a href="product.html">Product</a>
+         </p>
+        
+        <p class="footer-company-name">Baby Care © 2024</p>
+        </div>
+        <div class="footer-center">
+        <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>444  ABC</span> Chennai, India</p>
+        </div>
+        <div>
+        <i class="fa fa-phone"></i>
+        <p>+91 9774678467</p>
+        </div>
+        <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mail:support@company.com">babycare@gmail.com</a></p>
+        </div>
+        </div>
+        <div class="footer-right">
+        <p class="footer-company-about">
+        <span>About the company</span>
+        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+        <div class="footer-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+        </div>
+        </footer>
+        <script src="login.js"></script>
+      
+        
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="small-img">
+            <img src="image/product-1.jpg" alt="product1" id="product1">
+            <img src="image/product-12.jpg" alt="product2" id="product2">
+            <img src="image/product-9.jpg" alt="product3" id="product3">
+            <img src="image/product-10.jpg" alt="product4" id="product4">
+            <img src="image/product-11.jpg" alt="product5" id="product5">
+            <img src="image/product-3.jpg" alt="product6" id="product6">
+            <img src="image/product-2.jpg" alt="product7" id="product7">
+
+            
+        </div>
+        <div class="big-img">
+            <img src="image/product-1.jpg" alt="product-1" id="big-product">
+
+        </div>
+        
+    </div>
+    <script>
+        const  big_product=document.getElementById('big_product');
+        const product1=document.getElementById('product1'); 
+        const product2=document.getElementById('product2'); 
+        const product3=document.getElementById('product3'); 
+        const product4=document.getElementById('product4'); 
+        const product5=document.getElementById('product5'); 
+        const product6=document.getElementById('product6'); 
+        const product7=document.getElementById('product7'); 
+        product1.addEventListener('click',()=>big_product.setAttribute('src','./image/product1'))
+        product1.addEventListener('click',()=>big_product.setAttribute('src','./image/product2'))
+        product1.addEventListener('click',()=>big_product.setAttribute('src','./image/product3'))
+        product1.addEventListener('click',()=>big_product.setAttribute('src','./image/product4'))
+        product1.addEventListener('click',()=>big_product.setAttribute('src','./image/product5'))
+        product1.addEventListener('click',()=>big_product.setAttribute('src','./image/product6'))
+        product1.addEventListener('click',()=>big_product.setAttribute('src','./image/product7'))
+    </script> 
+    
+</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flowers.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="flowers.html">Flowers</a></li>
+           <li><a href="Galleries.html">Gallery</a></li>
+          <li><a href="workshop.html">Workshop</a></li>
+          <li><a href="contactus.html">Contact as</a></li>
+          <li><a href="signup.html">Signup</a></li>
+          <li><a href="login.html">Login</a></li>
+
+          <li><span class="cart-count" id="count">0</span></li>
+      </ul>
+      </nav>
+  </header>
+  <!-- <div class="total-amount">
+    Total Amount: <i class='bx bx-rupee'></i><span id="total">0</span>
+</div> -->
+<button class="button" onclick="addtocart()"></button>
+
+    <section class="products">
+        <h2>Our Flowers</h2>
+        <div class="total-amount">
+            Total Amount: <i class='bx bx-rupee'></i><span id="total">0</span>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="image/product-9.jpg" alt="Flower 1">
+                <h3>Blue peony</h3>
+                <p><del>Rs55.00</del>  <b><u>Rs:50</u></b></p>
+                
+
+                <div class="but_div">
+                    <button onclick="total(50)">Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="image/product-4.jpg" alt="Flower 2">
+                <h3>Yellow Gerbera</h3>
+                <p><b>Rs:60</b></p>
+                <div class="but_div">
+                <button onclick="total(60)">Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="image/product-3.jpg" alt="Flower 3">
+                <h3>Carnations</h3>
+                <p><b>Rs:50</b></p>
+                <div class="but_div">
+                    <button onclick="total(50)">Add to cart</button>
+                 </div>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="image/images.jpeg" alt="Flower 1">
+                <h3>Tulip Assortment</h3>
+                <p> <del>Rs:40</del><b>Rs:40</b></p>
+                <div class="but_div">
+                    <button onclick="total(40)">Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="image/images (1).jpeg" alt="Flower 2">
+                <h3>Red Roses</h3>
+                <p><b>Rs:80</b></p>
+                <div class="but_div">
+                    <button onclick="total(80)">Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="image/images (2).jpeg" alt="Flower 3">
+                <h3>Small Assortment</h3>
+                <p><b>Rs:52.60</b></p>
+                <div class="but_div">
+                    <button onclick="total(52.60)">Add to cart</button>
+                    </div>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="image/product-2 (1).jpg" alt="Flower 1">
+                <h3>Sunflower Bouquet</h3>
+                <p><b>Rs:50.60</b></p>
+                <div class="but_div">
+                    <button onclick="total(50.60)">Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="image/product-1.jpg" alt="Flower 2">
+                <h3>Flower Bouquet</h3>
+                <p><b>Rs:60.99</b></p>
+                <div class="but_div">
+                    <button onclick="total(60.99)">Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="image/product-10.jpg" alt="Flower 3">
+                <h3>RED Roses</h3>
+                <p> <del>Rs:100</del><b>Rs:80</b></p>
+                <div class="but_div">
+                    <button onclick="total(80)">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="product">
+                <img src="image/product-12.jpg" alt="Flower 1">
+                <h3>Pink Peony</h3>
+                <p><b>Rs:60.99</b></p>
+                <div class="but_div">
+                    <button onclick="total(60.99)">Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="image/product-7.jpg" alt="Flower 2">
+                <h3>Rose Assortment</h3>
+                <p><del>Rs:60.00</del><b>Rs:40</b></p>
+                <div class="but_div">
+                    <button  onclick="total(40)">Add to cart</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="image/product-6.jpg" alt="Flower 3">
+                <h3>Carnations Various</h3>
+                <p><b>Rs100</b></p>
+                <div class="but_div">
+                    <button onclick="total(100)">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+   <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>We're a team of passionate florists dedicated to providing beautiful flowers and exceptional customer service.</p>
+        <ul>
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Meet Our Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="flowers.html">Flowers</a></li>
+            <li><a href="Galleries.html">Gallery</a></li>
+            <li><a href="workshop.html">Workshop</a></li>
+            <li><a href="contactus.html">Contact as</a></li>
+            <li><a href="signup.html">Signup</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Stay Connected</h3>
+        <ul>
+          <li><a href="#" target="_blank"><i class="fa fa-facebook"></i> Facebook</a></li>
+          <li><a href="#" target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+          <li><a href="#" target="_blank"><i class="fa fa-twitter"></i> Twitter</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email : dhivya.com</p>
+       <p>Mobile : 9345386698</p>Email: [info@flowershop.com](mailto:info@flowershop.com)</p>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>&copy; 2024 Flower Shop. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    var totalAmount = 0;
+
+function total(price) {
+    var ct = document.querySelector("#count").innerHTML;
+    ct = Number(ct);
+    ct++;
+    document.querySelector("#count").innerHTML = ct;
+
+    //-----------
+
+
+    var t=document.querySelector("#total").innerHTML;
+    t = Number(t);
+
+    t += price;
+    document.querySelector("#total").innerHTML = t;
+}
+  </script>
+    
+</body>
+</html>
